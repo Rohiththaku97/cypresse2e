@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-14T14:16:19.116Z",
+    "end": "2021-11-14T14:16:29.814Z",
+    "duration": 10698,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1e97491-16c1-4614-b1b7-27f8f1299c6a",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/generatereports/test2.js",
+      "file": "cypress/integration/2-advanced-examples/generatereports/test2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d018f22-803b-4c62-9365-ffba81880e63",
+          "title": "Myfirstprogram",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My first test case",
+              "fullTitle": "Myfirstprogram My first test case",
+              "timedOut": null,
+              "duration": 6484,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.wait(2000);\ncy.get('.search-keyword').type('pe'); //cy.wait(6000)\ncy.get('.product:visible').should('have.length', 2); //cy.get('.products').find('.product').should('have.length',2)\ncy.get('.products').as('prod'); //cy.get('@prod').find('.product').eq(0).contains(\"ADD TO CART\").click()\ncy.get('@prod').find('.product').each(($el, index, $list) => {\n  const vegtext = $el.find('h4.product-name').text();\n  if (vegtext.includes('Grapes')) {\n    cy.wrap($el).find('button').click();\n    cy.get('.cart-icon > img').click();\n    cy.contains('PROCEED TO CHECKOUT').click();\n    cy.contains('Place Order').click();\n  }\n});",
+              "err": {},
+              "uuid": "4f66fd93-ea7a-4d92-a40d-81f3ed511710",
+              "parentUUID": "7d018f22-803b-4c62-9365-ffba81880e63",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f66fd93-ea7a-4d92-a40d-81f3ed511710"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6484,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

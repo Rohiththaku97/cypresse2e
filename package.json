@@ -1,0 +1,21 @@
+{
+  "name": "cypressauto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.7.0"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge": "mochawesome-merge cypress\reports/*.json > cypress\reports/outputfile.json",
+    "generate_mochawesome_report": "marge cypress\\reports\\output.json --reportDir .\\ --inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

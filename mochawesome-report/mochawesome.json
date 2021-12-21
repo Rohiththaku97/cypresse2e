@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-14T13:34:58.309Z",
+    "end": "2021-11-14T13:35:16.382Z",
+    "duration": 18073,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "771fdb0e-77cb-4991-8bfa-ade3e6d72feb",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/uprise.js",
+      "file": "cypress/integration/2-advanced-examples/uprise.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bb411e10-72db-444d-8bc5-16afa7a7c593",
+          "title": "Signup",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First test case",
+              "fullTitle": "Signup First test case",
+              "timedOut": null,
+              "duration": 12756,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://testing-app.uprise.co/sign-up\");\ncy.get('#name').type('test');\ncy.get(\"#email\").type('test131620@yopmail.com');\ncy.get('#password').type('Rohith123!');\ncy.get('#downshift-0-toggle-button').type('In');\ncy.get(\"[role='listbox']\").find('li p').contains('+91').click({\n  force: true\n});\ncy.get('#phone').type('98765678');\ncy.get('#accessCode').type('behappy');\ncy.get('[data-testid=\"sign-up-button\"]').click();",
+              "err": {},
+              "uuid": "d6538983-5963-474a-93ec-584e9bf03180",
+              "parentUUID": "bb411e10-72db-444d-8bc5-16afa7a7c593",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d6538983-5963-474a-93ec-584e9bf03180"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12756,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
